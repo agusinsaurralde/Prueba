@@ -1,0 +1,63 @@
+                        main {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            background: rgb(151, 205, 226);
+                            background: linear-gradient(0deg, rgb(215, 229, 235) 0%, rgb(151, 205, 226) 100%);
+                        }
+                        
+                        form {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            width: 90vw;
+                            padding: 20px;
+                            margin: 20px 0;
+                            background: radial-gradient(circle, rgb(125, 153, 195) 0%, rgb(95, 112, 149) 53%, rgb(67, 92, 151) 100%);
+                            border-radius: 20px;
+                            max-width: 1000px;
+                        }
+                        
+                        
+                        main form label {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        main form input {
+                            color: rgb(1, 31, 49);
+                            text-align: center;
+                            width: 70%;
+                            margin: 10px;
+                            padding: 20px;
+                            background-color: white;
+                            font-size: 20px;
+                        }
+                        
+                        main form img {
+                            border-radius: 50%;
+                            height: 100px;
+                            width: 100px;
+                            align-self: center;
+                        }
+                        
+                        main form input[type=password]:focus {
+                            outline: none;
+                        }
+                        
+                        main form input[type=submit]:hover {
+                            cursor: pointer;
+                        }
+                        
+                        @media only screen and (max-width: 320px) {
+                            main form {
+                                height: 60%;
+                                width: 90%;
+                                padding: 50px;
+                                margin: 15px;
+                                border-radius: 0px;
+                                border: none;
+                            }
+                        }
