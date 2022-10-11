@@ -33,9 +33,18 @@ namespace Vistas
                 string nombreUsuario = txtUsuario.Text;
                 string password = txtPassword.Text;
                 usuario = negocioUsuario.login(nombreUsuario, password);
-                if (usuario!=null) 
-                    Session.Add("usuario",usuario);
-                Response.Redirect("Inicio.aspx");
+                if (usuario != null)
+                {
+                    Session.Add("usuario", usuario);
+                    Response.Redirect("Inicio.aspx");
+                }
+                else
+                {
+                    lblErrorIngreso.Text = "El usuario o contraseña ingresados son incorrectos";
+                    txtUsuario.Text = "";
+                }
+                    
+                
             }
             catch(Exception ex)
             {

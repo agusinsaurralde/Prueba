@@ -44,7 +44,7 @@
             </div>
              <div class="row"> 
                  <div class="col">
-                    &nbsp;<asp:Image ID="imgPerfil" runat="server" />
+                    &nbsp;<asp:Image ID="imgPerfil" runat="server" Height="150px" />
                 </div>
                 <div class="col">
                     <label>Documento: <%=docente.Dni %></label><br />

@@ -102,7 +102,7 @@
                                 <td>
                         <label>
                         <asp:RequiredFieldValidator ID="rfvDocumento" runat="server" ControlToValidate="txtDni" ErrorMessage="Debe completar el campo" ForeColor="Red" ValidationGroup="grupo1">*</asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="revDocumento" runat="server" ControlToValidate="txtDni" ErrorMessage="Solo se admiten números" ForeColor="Red" ValidationExpression="^[0-9]{8}" ValidationGroup="grupo1">*</asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="revDocumento" runat="server" ControlToValidate="txtDni" ErrorMessage="Ingrese un DNI válido" ForeColor="Red" ValidationExpression="^[0-9]{8}" ValidationGroup="grupo1">*</asp:RegularExpressionValidator>
                         </label>
                                     <asp:Label ID="lblDni" runat="server"></asp:Label>
                                 </td>

@@ -37,8 +37,8 @@ namespace Vistas
                     Response.Redirect("Docentes.aspx");
                     
                 }
-                else { lblDni.Text = "DNI ya existente";
-                   
+                else { 
+                    lblDni.Text = "DNI ya existente";
                 }
             }
             catch (Exception ex)

@@ -49,6 +49,9 @@
                 <div>
                     <label><asp:Button ID="btnAceptar" class="btn btn-primary" runat="server" OnClick="OnClickBtnAceptar" text="Ingresar"/></label>
                 </div>
+                <div>
+                    <label><asp:Label ID="lblErrorIngreso" ForeColor="Red" runat="server" /></label>   
+                </div>
              </form>
 
             <%} %>
